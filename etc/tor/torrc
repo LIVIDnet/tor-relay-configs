@@ -1,0 +1,28 @@
+# The following file contains configurations for my Tor relay.
+
+## Host Information
+
+Nickname AlwaysLivid
+Address alwayslivid.com
+ContactInfo 0x9E541BDE43B99F44 Panos Vasilopoulos <hello AT alwayslivid dot com>
+
+## Network Configurations
+
+ORPort 1337
+ControlPort 1338
+DirPort 1339
+ExitPolicy reject6 *:*, reject *:*
+DisableDebuggerAttachment 0
+SocksPort 0
+
+### Bandwidth Configurations
+
+RelayBandwidthRate 30 MBits
+RelayBandwidthBurst 40 MBits
+
+## Admin Configurations
+
+CookieAuthentication 1
+MaxMemInQueues 4096 MB
+RunAsDaemon 1
+Log notice file /var/log/tor/notices.log
