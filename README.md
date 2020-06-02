@@ -8,7 +8,7 @@ This repository should allow anyone to launch their own Tor relay on their own m
 
 * Install `tor` (the daemon, **not** the browser) on your Linux/*BSD system.
 * Modify [the torrc file](etc/tor/torrc) with your own credentials.
-* **If you're using systemd**, un `bash config.sh`in order to install and immediately deploy your new Tor relay.
+* **If you're using systemd**, run `bash config.sh` in order to install and immediately deploy your new Tor relay.
 * Make sure that the `ORPort` and the `DIRPort` ports you're using are open and accessible to the internet. If they're not, the log file (which, by default, will be created in `/var/log/tor/notices.log`) will alert you.
 
 ### License
