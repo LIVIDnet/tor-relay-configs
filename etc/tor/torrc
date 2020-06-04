@@ -24,5 +24,4 @@ RelayBandwidthBurst 40 MBits
 
 CookieAuthentication 1
 MaxMemInQueues 1024 MB
-RunAsDaemon 1
 Log notice file /var/log/tor/notices.log
