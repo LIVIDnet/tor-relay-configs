@@ -18,6 +18,10 @@ then
     chown tor /var/log/tor
 fi
 
+# activates NTP service, due to the Raspberry Pi 4B+ not possessing a
+# physical, real-time clock. tor requires an accurate clock to work.
+sudo timedatectl set-ntp true
+
 # assumes that you're running systemd
 echo "Configuring systemd so that Tor starts on boot..."
 systemctl enable --now tor
