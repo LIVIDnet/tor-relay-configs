@@ -24,4 +24,4 @@ RelayBandwidthBurst 40 MBits
 
 CookieAuthentication 1
 MaxMemInQueues 1024 MB
-Log notice file /var/log/tor/notices.log
+Log notice file /var/log/tor/notices_relay.log
