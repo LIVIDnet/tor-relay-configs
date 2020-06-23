@@ -1,0 +1,16 @@
+Description=Anonymizing Overlay Network
+After=network.target
+
+[Service]
+User=tor
+Type=simple
+ExecStart=/usr/bin/tor -f /etc/tor/torrc
+ExecReload=/usr/bin/kill -HUP $MAINPID
+KillSignal=SIGINT
+LimitNOFILE=8192
+PrivateDevices=yes
+RestartSec=10 
+Restart=always 
+
+[Install]
+WantedBy=multi-user.target
