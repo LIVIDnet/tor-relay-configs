@@ -1,0 +1,23 @@
+# The following file contains the configurations for the LIVIDnet Tor bridge (running on dn42).
+# Please change the address accordingly.
+
+## Host information
+
+Nickname LIVIDnet
+ContactInfo 0x9E541BDE43B99F44 Panagiotis Vasilopoulos <hello AT alwayslivid dot com>
+
+## Network Configurations
+
+BridgeRelay 1
+ORPort 9001
+Address 172.20.34.161
+ExtORPort auto
+DataDirectory /var/lib/tor-bridge
+AssumeReachable 1
+ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+## Admin Configurations
+
+CookieAuthentication 1
+MaxMemInQueues 1024 MB
+Log notice file /var/log/tor/notices_bridge.log
