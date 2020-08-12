@@ -14,7 +14,6 @@ read -p "Are you sure you want to continue? [y/N] " warning
 if [[ $warning =~ [yY]* ]]
 then
     cp -rf etc/* /etc
-    cp -rf usr/* /usr
 
     # modify/remove the next two lines if you're planning to change the log location
     mkdir /var/log
